@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix alumniconnect: <http://vocab.alumniconnect.com#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+
+<http://vocab.alumniconnect.com> a owl:Ontology ;
+    dcterms:title "Vocabulaire Alumni Connect" .
+
+alumniconnect:Alumni a rdfs:Class ;
+    rdfs:label "Ancien Étudiant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:CurrentStudent a rdfs:Class ;
+    rdfs:label "Étudiant Actuel" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:DiscussionForum a rdfs:Class ;
+    rdfs:label "Forum de Discussion" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:Experience a rdfs:Class ;
+    rdfs:label "Expérience" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:Skill a rdfs:Class ;
+    rdfs:label "Compétence" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:Project a rdfs:Class ;
+    rdfs:label "Projet" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:Mentor a rdfs:Class ;
+    rdfs:label "Mentor" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:Mentee a rdfs:Class ;
+    rdfs:label "Étudiant Mentoré" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:hasUsername a rdf:Property ;
+    rdfs:label "a pour Nom d'Utilisateur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:hasRole a rdf:Property ;
+    rdfs:label "a pour Rôle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+alumniconnect:belongsToForum a rdf:Property ;
+    rdfs:label "appartient au Forum" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
