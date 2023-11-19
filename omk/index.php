@@ -13,7 +13,7 @@
 
     <div class="container">
         <?php
-            // Remplacez l'URL de l'API Omeka S par la bonne URL
+           
             $api_url = 'http://localhost/omk_thyp_24/omeka-s/api/items';
 
             // Récupérez les données depuis l'API Omeka S
